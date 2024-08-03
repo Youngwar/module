@@ -12,7 +12,7 @@ def string_info():
     count_calls()
 
 def is_contains ():
-    string = input('Введите искомую строку: ').lower()
+    string = input('Введите искомую строку: ')
     list_to_search = ((input('Введите список через пробел: ').lower()).split())
 
 
