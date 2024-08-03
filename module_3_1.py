@@ -17,7 +17,7 @@ def is_contains ():
     k = False
     for i in range (0, len(list_)):
 
-        if str_.lower() in list_[i].lower():
+        if str_.lower() in list_[i].lower() and string != '':
             k = True
     count_calls()
     print(k)
