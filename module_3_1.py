@@ -7,23 +7,22 @@ def count_calls():
      return calls
 
 def string_info():
-    string_ = input('Введите строку: ')
-    print({len(string_), string_.upper(), string_.lower()})
+    string = input('Введите строку: ')
+    print({len(string), string.upper(), string.lower()})
     count_calls()
 
 def is_contains ():
-    str_ = input('Введите искомую строку: ')
-    list_ = input('Введите список через пробел: ').split()
-    k = False
-    for i in range (0, len(list_)):
+    string = input('Введите искомую строку: ').lower()
+    list_to_search = ((input('Введите список через пробел: ').lower()).split())
 
-        if str_.lower() in list_[i].lower() and string != '':
-            k = True
+
+    if string.lower() in list_to_search and string != '':
+        print(True)
+    else: print(False)
+
     count_calls()
-    print(k)
 string_info()
 is_contains()
-string_info()
-is_contains()
+
 
 print(calls)
