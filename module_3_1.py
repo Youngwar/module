@@ -12,9 +12,7 @@ def string_info(string):
     count_calls()
 
 
-def is_contains(string):
-    list_to_search = ((input('Введите список через пробел: ').lower()).split())
-
+def is_contains(string, list_to_search = []):
     if string.lower() in list_to_search and string != '':
         print(True)
     else:
@@ -25,7 +23,7 @@ def is_contains(string):
 
 print('Введите строку: ')
 string_info(input())
-print('Введите искомую строку: ')
-is_contains(input())
+
+is_contains(input('Введите искомую строку: ',), (input('Введите список строк через пробел: ').lower()).split())
 
 print(calls)
