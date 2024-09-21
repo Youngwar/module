@@ -27,7 +27,7 @@ class Shop():
         p = products
         list = self.get_products()
         print(list)
-        j = open(self.__file_name, 'w')
+        j = open(self.__file_name, 'a')
         for i in p:
             if i.name not in list:
                 x = i.__str__()
