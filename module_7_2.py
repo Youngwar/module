@@ -17,6 +17,7 @@ def custom_write(file_name, string):
         string_positions[m] = line
         i += 1
     return string_positions
+    file.close()
 
 
 
