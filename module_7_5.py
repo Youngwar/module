@@ -3,8 +3,8 @@ import time
 
 
 
-os.chdir(r'C:\Users\admin\Desktop\PY')
-directory = os.getcwd()
+#os.chdir(r'C:\Users\admin\Desktop\PY')
+directory = '.'
 for root, dirs, files in os.walk(directory):
     for dir in dirs:
         for file in files:
