@@ -12,7 +12,7 @@ def read_info(name):
         i = file_.readline()
         if not i: break
         all_data.append(i)
-    file_.close
+    file_.close()
 
 
 
