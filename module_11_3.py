@@ -60,8 +60,6 @@ def introspection_info(obj):
         k.append(j[0])
     introspection_info_list.append(f'Список методов: {k}')
     introspection_info_list.append(f'Модуль объекта: {inspect.getmodule(obj)}')
-
-
     return introspection_info_list
 
 
